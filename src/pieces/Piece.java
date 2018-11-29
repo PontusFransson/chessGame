@@ -6,10 +6,12 @@ import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.paint.Color;
 
-public abstract class Piece extends Group {
+public abstract class Piece extends Group implements Moveable{
 
+	private Color color;
+	
 	public Piece(Color c) {
-
+		color = c;
 		String COLOR = "WHITE";
 		if (c == Color.BLACK) {
 			COLOR = "BLACK";
@@ -21,6 +23,10 @@ public abstract class Piece extends Group {
 		iv.setFitHeight(Square.SIZE);
 		this.getChildren().add(iv);
 
+	}
+	
+	public Color getColor(){
+		return this.color;
 	}
 
 }
