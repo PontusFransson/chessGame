@@ -73,7 +73,6 @@ public class King extends Piece {
 
 			Square s = ChessBoard.all_squares.get(row + 1).get(col + 1);
 			s.moveMark();
-
 			break;
 
 		}
@@ -83,7 +82,6 @@ public class King extends Piece {
 
 			Square s = ChessBoard.all_squares.get(row + 1).get(col - 1);
 			s.moveMark();
-
 			break;
 
 		}
