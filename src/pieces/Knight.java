@@ -14,18 +14,25 @@ public class Knight extends Piece {
 		// TODO Auto-generated method stub
 		if (!(row + 1 > 7 || col + 2 > 7))
 			ChessBoard.all_squares.get(row + 1).get(col + 2).moveMark();
+		
 		if (!(row + 1 > 7 || col - 2 < 0))
 			ChessBoard.all_squares.get(row + 1).get(col - 2).moveMark();
+		
 		if (!(row + 2 > 7 || col + 1 > 7))
 			ChessBoard.all_squares.get(row + 2).get(col + 1).moveMark();
+		
 		if (!(row + 2 > 7 || col - 1 < 0))
 			ChessBoard.all_squares.get(row + 2).get(col - 1).moveMark();
+		
 		if (!(row - 1 < 0 || col + 2 > 7))
 			ChessBoard.all_squares.get(row - 1).get(col + 2).moveMark();
+		
 		if (!(row - 1 < 0 || col - 2 < 0))
 			ChessBoard.all_squares.get(row - 1).get(col - 2).moveMark();
+		
 		if (!(row - 2 < 0 || col + 1 > 7))
 			ChessBoard.all_squares.get(row - 2).get(col + 1).moveMark();
+		
 		if (!(row - 2 < 0 || col - 1 < 0))
 			ChessBoard.all_squares.get(row - 2).get(col - 1).moveMark();
 
